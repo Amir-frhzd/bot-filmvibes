@@ -12,7 +12,7 @@ BOT_TOKEN = os.getenv('BOT_TOKEN')
 SAVE_CHANNEL_ID = int(os.getenv("SAVE_CHANNEL_ID"))  # آی‌دی کانال خصوصی
 CHANNEL_USERNAME = os.getenv("CHANNEL_USERNAME")  # نام کاربری کانال که کاربر باید عضو آن باشد
 
-#محدودیت 30 پیام در ثانیه
+#محدودیت 30 پیام در ثانیه 
 
 message_semaphore = Semaphore(30)
 async def send_and_delete_message(chat_id, message_id, context):
